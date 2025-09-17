@@ -1,0 +1,40 @@
+{
+  "name": "mymentalhealthbuddy-v10-perfection-frontend",
+  "private": true,
+  "version": "10.0.0-perfection",
+  "type": "module",
+  "description": "MyMentalHealthBuddy™ V10·PERFECTION - Ultimate Mental Health Frontend",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "lucide-react": "^0.263.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "vite": "^5.4.1"
+  },
+  "keywords": [
+    "mental-health",
+    "therapy",
+    "ai",
+    "enterprise",
+    "healing",
+    "perfection",
+    "v10",
+    "frontend",
+    "react"
+  ],
+  "license": "MIT"
+}
