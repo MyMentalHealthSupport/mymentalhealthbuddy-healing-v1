@@ -1,82 +1,17 @@
 {
-  "name": "mymentalhealthbuddy-v10-perfection",
-  "private": true,
-  "version": "10.0.0-perfection",
-  "type": "commonjs",
-  "main": "src/server.js",
-  "description": "MyMentalHealthBuddy™ V10·PERFECTION - Ultimate Enterprise Mental Health Platform",
+  "name": "mymentalhealthbuddy-healing-v1",
+  "version": "1.0.0",
+  "main": "server.ts",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "NODE_ENV=development nodemon src/server.js",
-    "dev:full": "concurrently \"npm run dev\" \"npm run frontend:dev\"",
-    "frontend:dev": "cd frontend && npm run dev",
-    "frontend:build": "cd frontend && npm run build",
-    "build": "npm run frontend:build",
-    "test": "jest --runInBand --verbose",
-    "test:watch": "jest --watch --runInBand",
-    "test:coverage": "jest --coverage --runInBand",
-    "health:check": "curl -f http://localhost:5000/health || exit 1",
-    "deploy:check": "npm run test && npm run health:check"
-  },
-  "engines": {
-    "node": ">=18.17.0"
+    "dev": "ts-node server.ts",
+    "start": "node dist/server.js"
   },
   "dependencies": {
-    "express": "^4.19.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "helmet": "^7.1.0",
-    "compression": "^1.7.4",
-    "express-rate-limit": "^8.1.0",
-    "winston": "^3.11.0",
-    "bcrypt": "^5.1.1",
-    "jsonwebtoken": "^9.0.2",
-    "openai": "^4.52.0",
-    "@aws-sdk/client-polly": "^3.645.0",
-    "stripe": "^16.6.0",
-    "raw-body": "^2.5.2",
-    "@aws-sdk/client-s3": "^3.645.0",
-    "@aws-sdk/s3-request-presigner": "^3.645.0",
-    "crypto": "^1.0.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "prom-client": "^15.1.3"
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
   },
   "devDependencies": {
-    "jest": "^29.7.0",
-    "supertest": "^6.3.4",
-    "@jest/globals": "^29.7.0",
-    "nodemon": "^3.0.2",
-    "concurrently": "^8.2.2",
-    "@vitejs/plugin-react": "^4.3.1",
-    "vite": "^5.4.1"
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "testMatch": [
-      "**/tests/**/*.test.js"
-    ],
-    "collectCoverageFrom": [
-      "src/**/*.js",
-      "!src/server.js"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "branches": 80,
-        "functions": 80,
-        "lines": 80,
-        "statements": 80
-      }
-    }
-  },
-  "keywords": [
-    "mental-health",
-    "therapy",
-    "ai",
-    "enterprise",
-    "healing",
-    "perfection",
-    "v10"
-  ],
-  "license": "MIT"
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  }
 }
